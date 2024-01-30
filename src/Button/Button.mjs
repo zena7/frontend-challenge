@@ -1,5 +1,9 @@
-import * as classes from "./Button.module.css";
+import * as classes from './Button.module.css';
 
 export function Button({ children }) {
-  return <button className={classes.button}>{children}</button>;
+  return (
+    <button type="button" className={classes.button}>
+      {children}
+    </button>
+  );
 }
