@@ -1,0 +1,4 @@
+dist/
+.parcel-cache
+*.config.mjs
+.eslintrc.cjs
