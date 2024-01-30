@@ -1,3 +1,3 @@
-module.export = {
-  extends: ['airbnb', 'airbnb/hooks'],
+module.exports = {
+  extends: ["airbnb", "airbnb/hooks"],
 };
