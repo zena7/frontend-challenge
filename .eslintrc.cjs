@@ -2,7 +2,8 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ['airbnb', 'airbnb/hooks'],
+  plugins: ['prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   rules: {
     'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': 0,
