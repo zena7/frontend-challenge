@@ -1,3 +1,3 @@
 module.exports = {
-  '*.mjs': ['eslint --fix', 'prettier --write'],
+  '*.mjs': ['yarn eslint', 'yarn format'],
 };
