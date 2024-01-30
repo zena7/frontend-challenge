@@ -1,6 +1,5 @@
 export default {
-  trailingComma: "es5",
-  tabWidth: 4,
-  semi: false,
+  trailingComma: "all",
   singleQuote: true,
+  arrowParens: "always",
 };
