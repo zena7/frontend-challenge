@@ -1,10 +1,6 @@
-import { Button } from './Button/index.mjs';
+// import { Button } from './Button/index.mjs';
+import { Layout } from './layout/index.mjs';
 
 export function App() {
-  return (
-    <>
-      <h1>Hello catssss!!!</h1>
-      <Button>Push</Button>
-    </>
-  );
+  return <Layout />;
 }
