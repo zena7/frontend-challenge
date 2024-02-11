@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { List } from '../shared/ui';
 import * as classes from './Header.module.css';
 
@@ -7,11 +7,15 @@ export function Header() {
     <header>
       <nav>
         <List className={classes.mainNavigation}>
-          <li>
-            <Link to="/">Все котики</Link>
+          <li className={classes.listItem}>
+            <NavLink to="/" className={classes.headerLink}>
+              Все котики
+            </NavLink>
           </li>
-          <li>
-            <Link to="/favoriteCats">Любимые котики</Link>
+          <li className={classes.listItem}>
+            <NavLink to="/favoriteCats" className={classes.headerLink}>
+              Любимые котики
+            </NavLink>
           </li>
         </List>
       </nav>

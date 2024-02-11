@@ -13,11 +13,6 @@ body {
   font-size: 18px;
 }
 
-body,
-header {
-  border: 1px solid salmon;
-}
-
 ul {
   margin: 0;
   padding-left: 0;
@@ -25,13 +20,14 @@ ul {
 
 li {
   list-style: none;
+  padding: 0;
 }
 
 .catsList {
   position: relative;
   padding: 2% 2% 0 2%;
   padding-bottom: O;
-  background-color: pink;
+  /* background-color: pink; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2%;
@@ -72,4 +68,13 @@ li {
   margin: 2% auto;
   margin-bottom: 1%;
   font-size: 1rem;
+}
+
+/* ЭТО класс из компонента HEADER. Он работает благодаря компоненту NavLink из react-router-dom!!!!!!Хочу его перенести в локальные стили */
+.active {
+  /* display: inline-block; */
+  background-color: #1e88e5;
+  color: white;
+  /* height: inherit; */
+  /* min-height: 5rem; */
 }
