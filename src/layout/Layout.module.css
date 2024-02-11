@@ -1,11 +1,1 @@
-.mainNavigation {
-  /* background-color: pink; */
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
 
-.mainNavigation li {
-  padding: 2% 2%;
-  align-items: center;
-}
