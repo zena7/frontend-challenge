@@ -44,24 +44,6 @@ li {
   margin: 0 0;
 }
 
-.catContainer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0 0;
-  margin: 0 0;
-}
-
-.catImg {
-  position: relative;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  /* height: auto; */
-  padding: 0 0;
-  margin: 0 0;
-}
-
 .buttonDownload {
   display: block;
   padding: 1% 2%;
