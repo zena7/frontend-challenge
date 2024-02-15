@@ -8,7 +8,6 @@ export function Layout() {
     <>
       <Header />
       <Outlet />
-      <footer> 2024 year</footer>
     </>
   );
 }
