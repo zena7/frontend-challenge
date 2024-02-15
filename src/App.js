@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Layout } from './layout/Layout';
 import { FavoriteCatsPage } from './pages/favoriteCatsPage';
 import { MainPage } from './pages/mainPage';
-import { Layout } from './layout/Layout';
 
 export function App() {
+  useEffect(() => {
+    localStorage.clear();
+    return localStorage.clear();
+  }, []);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
