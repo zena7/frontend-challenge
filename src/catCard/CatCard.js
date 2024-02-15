@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import * as classes from './CarCard.module.css';
+import * as classes from './CatCard.module.css';
 import { IconFavoriteBorder } from './assets/favBorderIcon';
 import { IconFavorite } from './assets/favoriteIcon';
 
