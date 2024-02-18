@@ -1,0 +1,38 @@
+.mainNavigation {
+  background-color: #2196f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* height: 2%; */
+  /* padding-top: 2.4%;
+  padding-bottom: 2.4%; */
+  min-height: 5rem;
+}
+
+.mainNavigation li {
+  flex-basis: 13%;
+  /* padding: 2% 2%; */
+  /* align-items: center; */
+}
+
+.headerLink {
+  position: relative;
+  left: 36%;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16% 8% 0 12%;
+  /* width: 100%; */
+  /* height: 5rem; */
+  /* align-items: center; */
+  min-height: 5rem;
+}
+
+/* Смотри общие стили */
+/* .active {
+  display: inline-block;
+  background-color: #1e88e5;
+  color: white;
+  height: inherit;
+} */
