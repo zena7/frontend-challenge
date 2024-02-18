@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { CatCard } from '../catCard/CatCard';
-import { Button, List } from '../shared/ui';
+import { List } from '../shared/ui';
 import { useFetch } from '../shared/use-fetch';
 
 export function MainPage() {
   const [page, setPage] = useState(0);
   const [cats, setCats] = useState([]);
-  const { data = [] } = useFetch(
+  const { data = [], loading } = useFetch(
     `/images/search?limit=15&page=${page}&order=ASC`,
   );
 
@@ -18,12 +18,27 @@ export function MainPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
-  console.log('Main page');
-
-  function handleClick() {
-    setPage((prev) => prev + 1);
-    console.log('click and page - ', page);
+  function handlerScroll(event) {
+    if (
+      event.target.documentElement.scrollHeight -
+        (event.target.documentElement.scrollTop + window.innerHeight) <
+      60
+    ) {
+      console.log('scroll');
+      setPage((prev) => prev + 1);
+    }
   }
+
+  useEffect(() => {
+    if (loading) {
+      <p>Загружаем еще котиков</p>;
+      console.log('loading');
+    }
+    document.addEventListener('scroll', handlerScroll);
+    return function () {
+      document.removeEventListener('scroll', handlerScroll);
+    };
+  }, [loading]);
 
   return (
     <main>
@@ -36,9 +51,7 @@ export function MainPage() {
           );
         })}
       </List>
-      <Button onClick={() => handleClick()} className="buttonDownload">
-        Загружаем еще котиков
-      </Button>
+      {loading && <p className="downloadMore">...загружаем еще котиков...</p>}
     </main>
   );
 }

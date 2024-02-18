@@ -1,7 +1,7 @@
 .catContainer {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 14rem;
+  height: 14rem;
   padding: 0 0;
   margin: 0 0;
   display: flex;
@@ -13,18 +13,17 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  /* height: auto; */
   padding: 0 0;
   margin: 0 0;
 }
 
 .containerIconsFav {
   position: absolute;
-  width: 24%;
-  height: 30%;
+  width: 3rem;
+  height: 3rem;
   border: none;
-  left: 78%;
-  top: 70%;
+  left: 72%;
+  top: 72%;
   background-color: transparent;
   cursor: pointer;
 }
@@ -43,10 +42,6 @@
 .containerIconsFav:hover .iconFavorite {
   display: block;
 }
-
-/* .containerIconsFav:focus .iconFavoriteBorder {
-  display: block;
-} */
 
 .active {
   display: block;
