@@ -7,18 +7,21 @@ export function useFetch(url) {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     get(url)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network error');
+        }
+        return response.json();
+      })
       .then((result) => {
-        setLoading(false);
-        console.log('result from useEffect: ', result);
         setData(result);
       })
       .catch((err) => {
-        setLoading(false);
         setError(err);
-      });
-    // }
+      })
+      .finally(() => setLoading(false));
   }, [url]);
 
   return {
