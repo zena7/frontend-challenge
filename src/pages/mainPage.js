@@ -52,9 +52,6 @@ export function MainPage() {
         })}
       </List>
       {loading && <p className="downloadMore">...загружаем еще котиков...</p>}
-      {/* <Button onClick={() => handleClick()} className="buttonDownload">
-        Загружаем еще котиков
-      </Button> */}
     </main>
   );
 }
