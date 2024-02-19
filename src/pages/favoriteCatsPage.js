@@ -10,7 +10,6 @@ export function FavoriteCatsPage() {
     setFavCats((prev) => prev.concat(array));
   }, []);
   // не знаю, что добавить в зависимости, чтобы при клике на кнопку лайк  в реальном времени удалялся этот котик
-  console.log('FAVORITE', favCats);
 
   return (
     <List className="catsList">
