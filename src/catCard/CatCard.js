@@ -6,7 +6,9 @@ import { IconFavoriteBorder } from './assets/favBorderIcon';
 import { IconFavorite } from './assets/favoriteIcon';
 
 export function CatCard({ url }) {
-  const [like, setLike] = useState(false);
+  const likesCards = useSelector((state) => state.likes.likes);
+
+  const [like, setLike] = useState(url in likesCards);
   const dispatch = useDispatch();
   const favCats = useSelector((state) => state.likes.likes);
 
