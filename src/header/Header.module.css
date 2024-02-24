@@ -1,3 +1,9 @@
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
 .mainNavigation {
   background-color: #2196f3;
   display: flex;

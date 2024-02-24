@@ -4,7 +4,7 @@ import * as classes from './Header.module.css';
 
 export function Header() {
   return (
-    <header>
+    <header className={classes.header}>
       <nav>
         <List className={classes.mainNavigation}>
           <li className={classes.listItem}>

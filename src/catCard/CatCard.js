@@ -1,24 +1,28 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { add, deleteCard } from '../redux/slices/likesSlice';
 import * as classes from './CatCard.module.css';
 import { IconFavoriteBorder } from './assets/favBorderIcon';
 import { IconFavorite } from './assets/favoriteIcon';
 
 export function CatCard({ url }) {
   const [like, setLike] = useState(false);
-  // const map = {
-  //   work: 'yes',
-  // };
-  // console.log('MAP', Object. );
-  useEffect(() => {}, []);
+  const dispatch = useDispatch();
+  const favCats = useSelector((state) => state.likes.likes);
 
   function handleClick() {
-    console.log(`Like ${url}`);
+    // console.log(`Like ${url}`);
     setLike((prev) => !prev);
-    if (localStorage.getItem(url)) {
-      localStorage.removeItem(url);
+    // if (localStorage.getItem(url)) {
+    //   localStorage.removeItem(url);
+    // } else {
+    if (url in favCats) {
+      dispatch(deleteCard({ url }));
     } else {
-      localStorage.setItem(url, url);
+      dispatch(add({ url }));
     }
+    // localStorage.setItem(url, url);
+    // }
   }
 
   return (
