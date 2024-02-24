@@ -7,10 +7,6 @@ import { MainPage } from './pages/mainPage';
 export function App() {
   const [page, setPage] = useState(0);
   const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   localStorage.clear();
-  //   return localStorage.clear();
-  // }, []);
   const getData = (dataFromApi) => setData(dataFromApi);
   const getPage = (pageCats) => setPage(pageCats);
 

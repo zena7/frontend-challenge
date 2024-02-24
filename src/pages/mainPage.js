@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { CatCard } from '../catCard/CatCard';
 import { List } from '../shared/ui';
 import { useFetch } from '../shared/use-fetch';
@@ -9,6 +10,8 @@ export function MainPage({ getPage, pageIs, getData, dataIs }) {
   const { data = [], loading } = useFetch(
     `/images/search?limit=15&page=${pageIs > 0 && page === 0 ? pageIs : page}&order=ASC`,
   );
+
+  const likes = useSelector((state) => state.likes.likes);
 
   useEffect(() => {
     if (dataIs.length > 0 && cats.length === 0) {
