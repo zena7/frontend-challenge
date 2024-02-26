@@ -7,12 +7,12 @@ export function Header() {
     <header className={classes.header}>
       <nav>
         <List className={classes.mainNavigation}>
-          <li className={classes.listItem}>
+          <li>
             <NavLink to="/" className={classes.headerLink}>
               Все котики
             </NavLink>
           </li>
-          <li className={classes.listItem}>
+          <li>
             <NavLink to="/favoriteCats" className={classes.headerLink}>
               Любимые котики
             </NavLink>
