@@ -13,18 +13,12 @@ export function CatCard({ url }) {
   const favCats = useSelector((state) => state.likes.likes);
 
   function handleClick() {
-    // console.log(`Like ${url}`);
     setLike((prev) => !prev);
-    // if (localStorage.getItem(url)) {
-    //   localStorage.removeItem(url);
-    // } else {
     if (url in favCats) {
       dispatch(deleteCard({ url }));
     } else {
       dispatch(add({ url }));
     }
-    // localStorage.setItem(url, url);
-    // }
   }
 
   return (
@@ -46,5 +40,3 @@ export function CatCard({ url }) {
     </div>
   );
 }
-
-// data-url={url}
