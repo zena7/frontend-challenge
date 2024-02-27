@@ -8,6 +8,28 @@
   flex-direction: column;
 }
 
+@media (max-width: 1350px) {
+  .catContainer {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .catContainer {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .catContainer {
+    width: 21rem;
+    height: 21rem;
+    margin: 0 0 0 10%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .catContainer {
     width: 18rem;
