@@ -41,11 +41,8 @@ li {
 
 /* ЭТО класс из компонента HEADER. Он работает благодаря компоненту NavLink из react-router-dom!!!!!!Хочу его перенести в локальные стили */
 .active {
-  /* display: inline-block; */
   background-color: #1e88e5;
   color: white;
-  /* height: inherit; */
-  /* min-height: 5rem; */
 }
 
 .downloadMore {
@@ -60,5 +57,30 @@ li {
   }
   100% {
     opacity: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .catsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 770px) {
+  .catsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .catsList {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 27px;
+    column-gap: 27px;
+    padding-left: 10%;
+  }
+
+  body {
+    font-size: 22px;
   }
 }

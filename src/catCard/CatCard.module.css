@@ -8,6 +8,13 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 550px) {
+  .catContainer {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 .catImg {
   position: relative;
   object-fit: cover;
