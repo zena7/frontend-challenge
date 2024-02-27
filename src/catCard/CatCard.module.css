@@ -37,6 +37,13 @@
   }
 }
 
+@media screen and (max-width: 430px) {
+  .catContainer {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 .catImg {
   position: relative;
   object-fit: cover;

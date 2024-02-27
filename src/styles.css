@@ -83,10 +83,17 @@ li {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 27px;
     column-gap: 27px;
+    padding: 48px 0px 48px 2px;
     padding-left: 10%;
   }
 
   body {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .catsList {
+    padding: 48px 0px 2px 2px;
   }
 }
