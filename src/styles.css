@@ -96,7 +96,7 @@ li {
   body {
     font-size: 22px;
   }
-
+  
   .catsList {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 27px;
@@ -109,6 +109,7 @@ li {
     width: 60%;
     padding-left: 10%;
     /* animation: changeColor 1.2s infinite; */
+
   }
 }
 
@@ -123,4 +124,5 @@ li {
     padding-left: 10%;
     /* animation: changeColor 1.2s infinite; */
   }
+
 }
