@@ -11,9 +11,11 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import likesReducer from './slices/likesSlice';
+import isTouchReducer from './slices/isTouchSlice';
 
 const rootReducer = combineReducers({
   likes: likesReducer,
+  touch: isTouchReducer,
 });
 
 const persistConfig = {
