@@ -15,6 +15,7 @@
 
 .mainNavigation li {
   flex-basis: 13%;
+  overflow: hidden;
 }
 
 .headerLink {
@@ -53,7 +54,7 @@
 
   .headerLink {
     left: 1%;
-    padding: 10% 20% 0 30%;
+    padding: 10% 14% 0 30%;
   }
 }
 
