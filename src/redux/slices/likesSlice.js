@@ -1,9 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// const initialState = {
-//   likes: 0,
-// };
-
 export const likesSlice = createSlice({
   name: 'likes',
   initialState: {
