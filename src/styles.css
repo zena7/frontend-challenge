@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -12,6 +17,10 @@ body {
   font-size: 18px;
   display: flex;
   justify-content: center;
+}
+
+main {
+  width: 100%;
 }
 
 #app {
@@ -44,6 +53,7 @@ li {
 .catItem {
   overflow: hidden;
   padding: 0 0;
+  transition: transform 0.3s ease;
 }
 
 /* ЭТО класс из компонента HEADER. Он работает благодаря компоненту NavLink из react-router-dom!!!!!!Хочу его перенести в локальные стили */
@@ -58,6 +68,23 @@ li {
   margin: 0 auto;
   width: 17%;
   animation: changeColor 1.2s infinite;
+}
+
+.loader {
+  display: block;
+  position: relative;
+  margin: auto auto;
+  margin-top: 10%;
+  width: 6rem;
+}
+
+.noCats {
+  font-size: 6rem;
+  margin-left: 5%;
+  margin-top: 5%;
+  position: relative;
+  width: 100%;
+  opacity: 86%;
 }
 
 @keyframes changeColor {
@@ -94,6 +121,13 @@ li {
   }
 }
 
+@media (min-width: 880px) {
+  .catItem:hover {
+    transform: scale(1.14);
+    box-shadow: 0.01rem 0.4rem 1rem rgba(34, 60, 80, 0.7);
+  }
+}
+
 @media screen and (max-width: 700px) {
   body {
     font-size: 22px;
@@ -112,7 +146,15 @@ li {
     padding-left: 10%;
     /* animation: changeColor 1.2s infinite; */
   }
+
+  /* .catItem:hover:none {
+    transform: scale(1.14);
+    box-shadow: 0.01rem 0.4rem 1rem rgba(34, 60, 80, 0.7);
+  } */
 }
+
+/* @media (hover: none) {
+} */
 
 @media screen and (max-width: 430px) {
   .catsList {

@@ -5,6 +5,8 @@
 }
 
 .mainNavigation {
+  width: 100vw;
+  max-width: 1440px;
   background-color: #2196f3;
   display: flex;
   flex-direction: row;
@@ -15,7 +17,6 @@
 
 .mainNavigation li {
   flex-basis: 13%;
-  /* overflow: hidden; */
 }
 
 .headerLink {
@@ -50,13 +51,11 @@
 @media (max-width: 770px) {
   .mainNavigation li {
     flex-basis: 50%;
+    font-size: 1.2rem;
   }
 
   .headerLink {
     left: 1%;
-    padding: 10% 26% 0 30%;
+    padding: 10% 15% 0 25%;
   }
-}
-
-@media screen and (max-width: 550px) {
 }
