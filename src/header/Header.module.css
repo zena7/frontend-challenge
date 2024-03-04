@@ -50,7 +50,8 @@
 
 @media (max-width: 770px) {
   .mainNavigation li {
-    flex-basis: 50%;
+    flex-basis: 49%;
+
     font-size: 1.2rem;
   }
 
