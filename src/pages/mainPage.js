@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { Loader } from '../shared/ui/Loader';
 import { CatCard } from '../catCard/CatCard';
 import { List } from '../shared/ui';
 import { useFetch } from '../shared/use-fetch';
@@ -53,11 +54,7 @@ export function MainPage({ getPage, pageIs, getData, dataIs }) {
           );
         })}
       </List>
-      {loading && (
-        <p className="downloadMore">
-          ...загружаем {page > 0 ? 'еще' : ''} котиков...
-        </p>
-      )}
+      <Loader loading={loading} page={page} />
     </main>
   );
 }
