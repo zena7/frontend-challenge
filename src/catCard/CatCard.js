@@ -35,13 +35,11 @@ export function CatCard({ url }) {
         onClick={() => handleClick()}
       >
         <IconFavorite
-          className={`${classes.iconFavorite} ${like && classes.active}`}
+          className={`${classes.iconFavorite} ${like ? classes.active : ''}`}
         />
         <IconFavoriteBorder
-          // className={`${classes.iconFavoriteBorder} ${like && !isTouch && classes.borderActive} ${isTouch && classes.borderActive}`}
           className={`${classes.iconFavoriteBorder} ${like && classes.borderActive} ${isTouch && !like && classes.isTouch}`}
         />
-        {/* {isTouch && <Button>TOUCH</Button>} */}
       </Button>
     </div>
   );
