@@ -1,6 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d3f980c4-d065-4c2f-aace-d79ad7cf4602/deploy-status)](https://app.netlify.com/sites/zena-cats/deploys)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-### [Demo](https://master--zena-cats.netlify.app/)
+### 😻 [Demo](https://master--zena-cats.netlify.app/)
 
 # Задание для Front-end стажёра
 
